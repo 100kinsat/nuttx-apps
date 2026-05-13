@@ -62,6 +62,7 @@ add_subdirectory(testing)
 add_subdirectory(wireless)
 
 # add examples and external at the end to allow library dependencies
+add_subdirectory(100kinsat)
 add_subdirectory(examples)
 if(EXISTS ${CMAKE_CURRENT_LIST_DIR}/external)
   add_subdirectory(external)

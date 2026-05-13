@@ -1,0 +1,29 @@
+#
+# For a description of the syntax of this configuration file,
+# see the file kconfig-language.txt in the NuttX tools repository.
+#
+
+config KINSAT_HELLO
+	tristate "\"Hello, 100kinSAT!\" example"
+	default n
+	---help---
+		Enable the \"Hello, 100kinSAT!\" example
+
+if KINSAT_HELLO
+
+config KINSAT_HELLO_PROGNAME
+	string "Program name"
+	default "hello"
+	---help---
+		This is the name of the program that will be used when the NSH ELF
+		program is installed.
+
+config KINSAT_HELLO_PRIORITY
+	int "Hello task priority"
+	default 100
+
+config KINSAT_HELLO_STACKSIZE
+	int "Hello stack size"
+	default DEFAULT_TASK_STACKSIZE
+
+endif
