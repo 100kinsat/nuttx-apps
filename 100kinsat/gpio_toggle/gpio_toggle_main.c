@@ -1,5 +1,6 @@
 #include <nuttx/config.h>
 #include <arch/board/cxd56_gpioif.h>
+#include <arch/chip/pin.h>
 #include <stdbool.h>
 
 #define GPIO_PIN    PIN_UART2_TXD
