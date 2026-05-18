@@ -1,0 +1,29 @@
+#
+# For a description of the syntax of this configuration file,
+# see the file kconfig-language.txt in the NuttX tools repository.
+#
+
+config KINSAT_GPIO_TOGGLE
+	tristate "GPIO toggle example"
+	default n
+	---help---
+		Enable the GPIO toggle example
+
+if KINSAT_GPIO_TOGGLE
+
+config KINSAT_GPIO_TOGGLE_PROGNAME
+	string "Program name"
+	default "gpio_toggle"
+	---help---
+		This is the name of the program that will be used when the NSH ELF
+		program is installed.
+
+config KINSAT_GPIO_TOGGLE_PRIORITY
+	int "gpio_toggle task priority"
+	default 100
+
+config KINSAT_GPIO_TOGGLE_STACKSIZE
+	int "gpio_toggle stack size"
+	default DEFAULT_TASK_STACKSIZE
+
+endif

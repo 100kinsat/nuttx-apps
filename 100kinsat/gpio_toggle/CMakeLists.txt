@@ -1,0 +1,11 @@
+if(CONFIG_KINSAT_GPIO_TOGGLE)
+  nuttx_add_application(
+    NAME
+    ${CONFIG_KINSAT_GPIO_TOGGLE_PROGNAME}
+    SRCS
+    gpio_toggle_main.c
+    STACKSIZE
+    ${CONFIG_KINSAT_GPIO_TOGGLE_STACKSIZE}
+    PRIORITY
+    ${CONFIG_KINSAT_GPIO_TOGGLE_PRIORITY})
+endif()
