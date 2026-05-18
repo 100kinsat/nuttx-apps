@@ -1,0 +1,6 @@
+menu "100kinSAT"
+
+source "$APPSDIR/100kinsat/hello/Kconfig"
+source "$APPSDIR/100kinsat/gpio_toggle/Kconfig"
+
+endmenu
