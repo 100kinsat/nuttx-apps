@@ -2,7 +2,7 @@
 #include <arch/board/cxd56_gpioif.h>
 #include <stdbool.h>
 
-#define GPIO_PIN    PIN_UART_TX
+#define GPIO_PIN    PIN_UART2_TXD
 
 int main(int argc, FAR char *argv[])
 {
